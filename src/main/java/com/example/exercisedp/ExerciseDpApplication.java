@@ -1,5 +1,6 @@
 package com.example.exercisedp;
 
+import com.example.exercisedp.controller.Controller;
 import com.example.exercisedp.controller.ControllerImpl;
 import com.example.exercisedp.models.Company;
 import com.github.javafaker.Faker;

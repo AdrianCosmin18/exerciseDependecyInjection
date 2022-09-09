@@ -14,6 +14,10 @@ public class ControllerImpl implements Controller{
 
     private List<Company> companies;
 
+    public ControllerImpl() {
+        load();
+    }
+
     @Override
     public void load() {
 
@@ -24,8 +28,8 @@ public class ControllerImpl implements Controller{
                 String text = read.nextLine();
                 companies.add(new Company(text));
             }
-        }catch (FileNotFoundException e){
-            e.getMessage();
+        }catch (Exception e){
+            e.printStackTrace();
         }
     }
 
